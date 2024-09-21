@@ -165,7 +165,7 @@ void loop()
     longPressedAt = millis();
   }
 
-  if (Debouncer::expired(morsedAt, resetTimeout) || Debouncer::expired(morsedAt, resetTimeout))
+  if (Debouncer::expired(morsedAt, resetTimeout))
   {
     morse.reset();
     morse.print();
